@@ -1,0 +1,5 @@
+<% unless @error.present? %>
+	$('.list-container').html("<%= j (render partial: 'user_list') %>")
+<% else %>
+	$('.list-container').html("<%= @error %>")
+<% end %>
